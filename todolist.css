@@ -1,0 +1,209 @@
+/* Default styles - Apply to laptops and larger devices */
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #374151;
+    color: #fff;
+}
+header {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+header h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #747171;
+    margin-bottom: 1rem;
+}
+.newtask {
+    display: flex;
+    justify-content: center;
+}
+textarea, button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+#in::placeholder {
+    color: grey;
+}
+#in {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #1f2937;
+    color: lightgray;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    max-width: 800px;
+}
+#submit {
+    color: palevioletred;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, rgb(255, 255, 0), #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#submit:hover {
+    opacity: 0.3;
+}
+#submit:active {
+    opacity: 0.9;
+}
+#Tasklist {
+    flex: 1 1 0%;
+    margin: auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+#Tasklist h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #747171;
+}
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 21, 56);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: max-content;
+}
+.content {
+    display: flex;
+}
+.text {
+    width: auto;
+    height: auto;
+    color: whitesmoke;
+    font-size: 1rem;
+    resize: none;
+    white-space: normal;
+}
+.text::-webkit-scrollbar {
+    display: none;
+}
+.actions button {
+    cursor: pointer;
+    margin: 0.1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+.actions button:hover {
+    opacity: 0.3;
+}
+.actions button:active {
+    opacity: 0.9;
+}
+.Edit {
+    background-image: linear-gradient(to right, rgb(255, 255, 0), #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.Delete {
+    color: green;
+}
+#clear {
+    font-size: large;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #00bcd4;
+    transition: 0.1s;
+}
+button:hover {
+    opacity: 0.3;
+}
+button:active {
+    opacity: 0.9;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+    #in {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    #submit {
+        font-size: 1.3rem;
+    }
+    #tasks .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .newtask {
+        flex-direction: column;
+        align-items: center;
+    }
+    #in {
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    #submit {
+        font-size: 1.2rem;
+    }
+    #tasks .task {
+        flex-direction: column;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    .actions button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    body {
+        padding: 0 1rem;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    #in {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+    #submit {
+        font-size: 1rem;
+    }
+    #Tasklist h2 {
+        font-size: 1.2rem;
+    }
+    #tasks .task {
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .actions button {
+        font-size: 0.8rem;
+    }
+}

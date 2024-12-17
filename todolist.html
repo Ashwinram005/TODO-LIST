@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST APP</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <header>
+        <h1>TASK LIST</h1>
+        <div class="newtask">
+            <input type="text" id="in" placeholder="What do you have planned?">
+            <button id="submit" onclick="addtask()">Add task</button>
+        </div>
+    </header>
+    <main>
+        <section id="Tasklist">
+            <h2>TASKS</h2>
+            <div id="tasks">
+                <!-- <div class="task">
+                    <div class="content">
+                        <textarea class="text" readonly></textarea>
+                    </div>
+                    <div class="actions">
+                        <button class="Edit">Edit</button>
+                        <button class="Delete" onclick="deletetask(event)">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+            <button id="clear" onclick="clearalltask()">Clear All</button>
+        </section>
+    </main>
+    <script src="todolist.js"></script>
+</body>
+</html>
